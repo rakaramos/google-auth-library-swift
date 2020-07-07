@@ -17,6 +17,9 @@ import Dispatch
 import CryptoSwift
 import TinyHTTPServer
 import NIOHTTP1
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 struct Credentials : Codable {
   let consumerKey : String

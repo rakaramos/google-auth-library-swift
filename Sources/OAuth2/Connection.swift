@@ -15,6 +15,9 @@
 import Foundation
 import Dispatch
 import CryptoSwift
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public class Connection {
   public var provider: TokenProvider
